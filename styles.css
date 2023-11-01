@@ -1,0 +1,51 @@
+/* body{
+    border: 2px solid red;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+} */
+
+/* Contenedor nav */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__imagen{
+    width: 30px;
+    height: 30px;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo__nombre{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.nav__ingreso{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.boton{
+    color: white;
+    background-color: #2ad167;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}

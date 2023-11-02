@@ -1,13 +1,13 @@
-body {
+.contenedor {
   width: 100vw;
   height: 100vh;
   max-width: 1440px;
   display: flex;
   flex-direction: column;
+  margin: auto;
   gap: 10%;
-
-  font-family: "Roboto", sans-serif;
-  font-family: "Space Grotesk", sans-serif;
+  /* font-family: "Roboto", sans-serif;
+  font-family: "Space Grotesk", sans-serif; */
 }
 
 /* Contenedor nav */
@@ -79,18 +79,20 @@ header {
 .header__imagenes {
   width: 50%;
   position: relative;
+  text-align: right;
+  margin-right: 30px;
 }
 
 .imagenes__circulo {
   position: absolute;
   top: -50px;
-  left: -60px;
+  left: 70px;
 }
 
 .imagenes__puntos {
   position: absolute;
   bottom: -20px;
-  right: 135px;
+  right: -40px;
 }
 
 .boton {

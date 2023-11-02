@@ -49,3 +49,25 @@ nav{
     border-radius: 5px;
     padding: 10px;
 }
+
+
+
+header{
+    border: 2px solid black;
+    height: 200px;
+}
+
+.caracteristicas{
+    border: 2px solid black;
+    height: 200px;
+}
+
+.precios{
+    border: 2px solid black;
+    height: 200px;
+}
+
+footer{
+    border: 2px solid black;
+    height: 200px;
+}

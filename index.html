@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
       <div class="nav__logo">
-        <img src="img/logo-verde.png" alt="logo-verde" class="logo__imagen"/>
+        <img src="img/logo-verde.png" alt="logo-verde" class="logo__imagen" />
         <span class="logo__nombre">Flex</span>
       </div>
 
@@ -23,11 +30,32 @@
         <span class="ingreso__ingresar">Ingresar</span>
         <button type="button" class="ingreso__btn boton">Registrarse</button>
       </div>
-
-
     </nav>
     <header>
-      <p>Header</p>
+      <div class="header__texto">
+        <p class="boton" id="texto__nuevo">NUEVO</p>
+        <p class="texto__titulo">La plataforma para las empresas del futuro</p>
+        <p class="texto__parrafo">
+          Productos pensados para los negocios del proximo siglo
+        </p>
+        <div class="texto__botones">
+          <button type="button" class="boton">Solicitar demo</button>
+          <button type="button" class="">Registrarse</button>
+        </div>
+      </div>
+      <div class="header__imagenes">
+        <img
+          src="img/header.jpg"
+          alt="Imagen Oficina"
+          class="imagenes__oficina"
+        />
+        <img
+          src="img/circle3-yellow.svg"
+          alt="Circulo"
+          class="imagenes__circulo"
+        />
+        <img src="img/dots3-blue.svg" alt="Puntos" class="imagenes__puntos" />
+      </div>
     </header>
 
     <div class="caracteristicas">

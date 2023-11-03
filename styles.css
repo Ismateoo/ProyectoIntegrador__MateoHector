@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .contenedor {
   width: 100vw;
   height: 100vh;
@@ -6,8 +11,6 @@
   flex-direction: column;
   margin: auto;
   gap: 10%;
-  /* font-family: "Roboto", sans-serif;
-  font-family: "Space Grotesk", sans-serif; */
 }
 
 /* Contenedor nav */
@@ -59,20 +62,19 @@ header {
   justify-content: center;
 }
 
-#texto__nuevo {
-  padding: 7px;
-  border-radius: 30px;
-  margin-bottom: 0px;
-}
-
 .texto__titulo {
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4.3rem;
   margin: 0px;
 }
 
 .texto__parrafo {
-  font-size: 1.7rem;
+  font-size: 1.45rem;
+}
+
+.texto__botones {
+  display: flex;
+  gap: 1rem;
 }
 
 /* Imagenes */
@@ -95,12 +97,35 @@ header {
   right: -40px;
 }
 
-.boton {
+.verde_blanco {
   color: white;
   background-color: #2ad167;
+}
+
+.boton__registrarse {
+  background-color: white;
+  border: solid #d3d3d3 0.12rem;
+  border-radius: 5px;
+  padding: 10px;
+}
+.boton__registrarse_verde {
   border: none;
   border-radius: 5px;
   padding: 10px;
+}
+.boton_demo {
+  width: 220px;
+  height: 70px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.boton__texto__nuevo {
+  padding: 7px;
+  border-radius: 30px;
+  margin-bottom: 0px;
 }
 
 .caracteristicas {

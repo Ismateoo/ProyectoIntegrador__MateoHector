@@ -93,8 +93,8 @@ header {
 
 .imagenes__puntos {
   position: absolute;
-  bottom: -20px;
-  right: -40px;
+  bottom: 2px;
+  right: -30px;
 }
 
 .verde_blanco {
@@ -103,10 +103,12 @@ header {
 }
 
 .boton__registrarse {
+  width: 185px;
   background-color: white;
   border: solid #d3d3d3 0.12rem;
   border-radius: 5px;
   padding: 10px;
+  font-size: 1.2rem;
 }
 .boton__registrarse_verde {
   border: none;
@@ -115,8 +117,8 @@ header {
 }
 .boton_demo {
   width: 220px;
-  height: 70px;
-  font-size: 1.3rem;
+  height: 60px;
+  font-size: 1.2rem;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -130,13 +132,45 @@ header {
 
 .caracteristicas {
   border: 2px solid black;
-  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.precios {
+.caracteristicas__tarjetas{
   border: 2px solid black;
-  height: 200px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  width: 400px;
 }
+
+.caracteristicas__icono{
+ /*  background-color: #2ad167;
+  border-radius: 10px; */
+ width: 50px;
+ height: 50px;
+}
+
+.icono{
+  background-color: #2ad167;
+  width: 50px;
+  height: 50px;
+}
+
+.caracteristicas__titulo{
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.caracteristicas__parrafo{
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
 
 footer {
   border: 2px solid black;

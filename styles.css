@@ -137,7 +137,7 @@ header {
   width: 100%;
 }
 
-.caracteristicas__tarjetas{
+.caracteristicas__tarjetas {
   border: 2px solid black;
   display: flex;
   align-items: center;
@@ -146,45 +146,45 @@ header {
   width: 400px;
 }
 
-.caracteristicas__icono{
- /*  background-color: #2ad167;
+.caracteristicas__icono {
+  /*  background-color: #2ad167;
   border-radius: 10px; */
- width: 50px;
- height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-.icono{
+.icono {
   background-color: #2ad167;
   width: 50px;
   height: 50px;
 }
 
-.caracteristicas__titulo{
+.caracteristicas__titulo {
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
 
-.caracteristicas__parrafo{
+.caracteristicas__parrafo {
   font-size: 1rem;
   text-align: center;
   margin-top: 0px;
   font-weight: bold;
 }
 
+.precios {
+  /* border: 2px solid black; */
+}
+
 .gris {
-  background-color: rgb(125, 125, 125);
-  border: solid 1px blue;
+  background-color: #f7f8f9;
+  /* border: solid 1px blue; */
   border-radius: 5px;
   height: 530px;
   width: 395px;
 }
 
-.precios {
-  border: 2px solid black;
-}
-
 .tabla_precios {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
@@ -194,7 +194,19 @@ header {
 }
 
 .precio_card {
- color: #2ad167;
+  color: #2ad167;
+}
+
+.plan_card {
+  color: #2ad167;
+}
+
+.valor_card {
+  font-size: 2em;
+}
+
+.facturando_card {
+  color: #93a1b6;
 }
 
 .boton_precios {
@@ -204,11 +216,29 @@ header {
 }
 
 .img_check {
-  margin-bottom: -5px;
+  grid-area: "a";
+  margin-top: 23px;
 }
 
 .contenedor_check {
+ /*  border: 1px solid yellow; */
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 30px 1fr;
+  grid-template-areas: 
+  "a" "b"
+  "a" "b"
+  "a" "b"
+  "a" "b";
   text-align: start;
+}
+
+.span_check {
+  /* border: 1px solid yellow; */
+  grid-area: "b";
+  margin-top: 23px;
+  color: #93a1b6;
 }
 
 footer {

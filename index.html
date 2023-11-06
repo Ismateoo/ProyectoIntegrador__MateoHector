@@ -1,183 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex</title>
-    <link rel="stylesheet" href="styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="contenedor">
-      <nav>
-        <div class="nav__logo">
-          <img src="img/logo-verde.png" alt="logo-verde" class="logo__imagen" />
-          <span class="logo__nombre">Flex</span>
-        </div>
-        <div class="nav__menu">
-          <span class="menu__Producto">Producto</span>
-          <span class="menu__Producto">Características</span>
-          <span class="menu__Producto">Precios</span>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flex</title>
+  <link rel="stylesheet" href="styles.css" />
 
-        <div class="nav__ingreso">
-          <span class="ingreso__ingresar">Ingresar</span>
-          <button
-            type="button"
-            class="ingreso__btn boton__registrarse_verde verde_blanco"
-          >
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="contenedor">
+    <nav>
+      <div class="nav__logo">
+        <img src="img/logo-verde.png" alt="logo-verde" class="logo__imagen" />
+        <span class="logo__nombre">Flex</span>
+      </div>
+      <div class="nav__menu">
+        <span class="menu__Producto">Producto</span>
+        <span class="menu__Producto">Características</span>
+        <span class="menu__Producto">Precios</span>
+      </div>
+
+      <div class="nav__ingreso">
+        <span class="ingreso__ingresar">Ingresar</span>
+        <button type="button" class="ingreso__btn boton__registrarse_verde verde_blanco">
+          Registrarse
+        </button>
+      </div>
+    </nav>
+    <header>
+      <div class="header__texto">
+        <p class="boton__texto__nuevo verde_blanco" id="">NUEVO</p>
+        <p class="texto__titulo">
+          La plataforma para las empresas del futuro
+        </p>
+        <p class="texto__parrafo">
+          Productos pensados para los negocios del proximo siglo
+        </p>
+        <div class="texto__botones">
+          <button type="button" class="boton_demo verde_blanco">
+            Solicitar demo
+          </button>
+          <button type="button" class="boton__registrarse">
             Registrarse
           </button>
         </div>
-      </nav>
-      <header>
-        <div class="header__texto">
-          <p class="boton__texto__nuevo verde_blanco" id="">NUEVO</p>
-          <p class="texto__titulo">
-            La plataforma para las empresas del futuro
-          </p>
-          <p class="texto__parrafo">
-            Productos pensados para los negocios del proximo siglo
-          </p>
-          <div class="texto__botones">
-            <button type="button" class="boton_demo verde_blanco">
-              Solicitar demo
-            </button>
-            <button type="button" class="boton__registrarse">
-              Registrarse
-            </button>
-          </div>
-        </div>
-        <div class="header__imagenes">
-          <img
-            src="img/header.jpg"
-            alt="Imagen Oficina"
-            class="imagenes__oficina"
-          />
-          <img
-            src="img/circle3-yellow.svg"
-            alt="Circulo"
-            class="imagenes__circulo"
-          />
-          <img src="img/dots3-blue.svg" alt="Puntos" class="imagenes__puntos" />
-        </div>
-      </header>
+      </div>
+      <div class="header__imagenes">
+        <img src="img/header.jpg" alt="Imagen Oficina" class="imagenes__oficina" />
+        <img src="img/circle3-yellow.svg" alt="Circulo" class="imagenes__circulo" />
+        <img src="img/dots3-blue.svg" alt="Puntos" class="imagenes__puntos" />
+      </div>
+    </header>
 
-      <section class="caracteristicas">
-        <div class="caracteristicas__tarjetas">
-          <div class="icono">
-            <img
-              src="img/mail-icon.svg"
-              alt="mail"
-              class="caracteristicas__icono"
-            />
-          </div>
-          <h3 class="caracteristicas__titulo">Capacitación</h3>
-          <p class="caracteristicas__parrafo">
-            Asistencia y capacitación de primer nivel
-          </p>
+    <section class="caracteristicas">
+      <div class="caracteristicas__tarjetas">
+        <div class="icono">
+          <img src="img/mail-icon.svg" alt="mail" class="caracteristicas__icono" />
         </div>
-
-        <div class="caracteristicas__tarjetas">
-          <div class="icono">
-            <img
-              src="img/analytics-icon.svg"
-              alt="analiticas"
-              class="caracteristicas__icono"
-            />
-          </div>
-          <h3 class="caracteristicas__titulo">Analíticas claras</h3>
-          <p class="caracteristicas__parrafo">
-            Disfruta de un dashboard de analíticas claras y accionables
-          </p>
-        </div>
-
-        <div class="caracteristicas__tarjetas">
-          <div class="icono">
-            <img
-              src="img/people-icon.svg"
-              alt="personas"
-              class="caracteristicas__icono"
-            />
-          </div>
-          <h3 class="caracteristicas__titulo">Soluciones para equipos</h3>
-          <p class="caracteristicas__parrafo">
-            Facilita el accionar de tu empresa con nuestra suite de herramientas
-          </p>
-        </div>
-      </section>
-      
-      <section class="precios">
-        <h2>Precios flexibles que escalan contigo</h2>
-        <p>
-          Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de
-          prueba de 7 días en todos nuestros planes.
+        <h3 class="caracteristicas__titulo">Capacitación</h3>
+        <p class="caracteristicas__parrafo">
+          Asistencia y capacitación de primer nivel
         </p>
-        <div class="tabla_precios">
-          <div class="gris">
-            <p class="precio_card">PRECIO</p>
-            <p class="plan_card">Plan básico</p>
-            <p class="valor_card">$ 10/mes</p>
-            <p class="facturando_card">Facturando anualmente</p>
-            <div class="contenedor_check">
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">1GB de almacenamiento</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Dashboard completo</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Asistencia por correo</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Hasta 10 miembros</span>
-            </div>
-            <button class="verde_blanco boton_precios">Solicitar demo</button>
-          </div>
-          <div class="gris">
-            <p class="precio_card">PRECIO</p>
-            <p class="plan_card">Plan freelancer</p>
-            <p class="valor_card">$ 99/mes</p>
-            <p class="facturando_card">Facturando anualmente</p>
-            <div class="contenedor_check">
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Características básicas</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Asistencia preferencial</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">100GB de almacenamiento</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Hasta 100 miembros</span>
-            </div>
-            <button class="verde_blanco boton_precios">Solicitar demo</button>
-          </div>
-          <div class="gris">
-            <p class="precio_card">PRECIO</p>
-            <p class="plan_card">Plan empresas</p>
-            <p class="valor_card">$ 799/mes</p>
-            <p class="facturando_card">Facturando anualmente</p>
-            <div class="contenedor_check">
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Características freelancer</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">1TB de almacenamiento</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Asistencia telefónica 24/7</span>
-              <img src="img/bxs-check-circle.svg" class="img_check" />
-              <span class="span_check">Miembros ilimitados</span>
-            </div>
-            <button class="verde_blanco boton_precios">Solicitar demo</button>
-          </div>
+      </div>
+
+      <div class="caracteristicas__tarjetas">
+        <div class="icono">
+          <img src="img/analytics-icon.svg" alt="analiticas" class="caracteristicas__icono" />
         </div>
-      </section>
+        <h3 class="caracteristicas__titulo">Analíticas claras</h3>
+        <p class="caracteristicas__parrafo">
+          Disfruta de un dashboard de analíticas claras y accionables
+        </p>
+      </div>
+
+      <div class="caracteristicas__tarjetas">
+        <div class="icono">
+          <img src="img/people-icon.svg" alt="personas" class="caracteristicas__icono" />
+        </div>
+        <h3 class="caracteristicas__titulo">Soluciones para equipos</h3>
+        <p class="caracteristicas__parrafo">
+          Facilita el accionar de tu empresa con nuestra suite de herramientas
+        </p>
+      </div>
+    </section>
+
+    <section class="precios">
+      <h2 class="h2_precios">Precios flexibles que escalan contigo</h2>
+      <p class="p_precios">
+        Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de
+        prueba de 7 días en todos nuestros planes.
+      </p>
+      <div class="tabla_precios">
+        <div class="gris">
+          <p class="precio_card">PRECIO</p>
+          <p class="plan_card">Plan básico</p>
+          <p class="valor_card">$ 10/mes</p>
+          <p class="facturando_card">Facturando anualmente</p>
+          <div class="contenedor_check">
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">1GB de almacenamiento</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Dashboard completo</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Asistencia por correo</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Hasta 10 miembros</span>
+          </div>
+          <button class="verde_blanco boton_precios">Solicitar demo</button>
+        </div>
+        <div class="gris">
+          <p class="precio_card">PRECIO</p>
+          <p class="plan_card">Plan freelancer</p>
+          <p class="valor_card">$ 99/mes</p>
+          <p class="facturando_card">Facturando anualmente</p>
+          <div class="contenedor_check">
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Características básicas</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Asistencia preferencial</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">100GB de almacenamiento</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Hasta 100 miembros</span>
+          </div>
+          <button class="verde_blanco boton_precios">Solicitar demo</button>
+        </div>
+        <div class="gris">
+          <p class="precio_card">PRECIO</p>
+          <p class="plan_card">Plan empresas</p>
+          <p class="valor_card">$ 799/mes</p>
+          <p class="facturando_card">Facturando anualmente</p>
+          <div class="contenedor_check">
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Características freelancer</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">1TB de almacenamiento</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Asistencia telefónica 24/7</span>
+            <img src="img/bxs-check-circle.svg" class="img_check" />
+            <span class="span_check">Miembros ilimitados</span>
+          </div>
+          <button class="verde_blanco boton_precios">Solicitar demo</button>
+        </div>
+      </div>
+    </section>
 
 
-      <footer>
-        <p>Footer</p>
-      </footer>
-    </div>
-  </body>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </div>
+</body>
+
 </html>

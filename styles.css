@@ -133,7 +133,6 @@ header {
 .caracteristicas {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
 }
 
 .caracteristicas__tarjetas{
@@ -145,20 +144,20 @@ header {
   margin-top: 50px;
 }
 
-.caracteristicas__icono{
-margin: 20px;
-}
-
 .icono {
   background-color: #2ad167;
   width: 60px;
   height: 60px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .caracteristicas__titulo {
   font-size: 1.5rem;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .caracteristicas__parrafo {
@@ -303,4 +302,82 @@ footer > p {
 footer > span{
   margin-left: 50px;
   margin-bottom: 50px;
+}
+
+
+/* ------------------------------------------------------ */
+
+@media screen and (max-width: 390px) {
+
+   *{
+    box-sizing: border-box;
+    max-width: 389px;
+  }
+
+  body{
+    margin: 0px;
+  }
+
+  .contenedor{
+    /* max-width: 390; */
+   /*  align-items: center;
+    justify-content: center; */
+    gap: 2%
+  }
+
+  .boton__texto__nuevo{
+    display: none;
+  }
+
+  .header__imagenes{
+    display: none;
+  }
+
+  .caracteristicas{
+    flex-direction: column;
+  }
+
+  footer{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer_logo{
+    top: 35px;
+    left: 180px;
+  } 
+  nav{
+    margin-bottom: 0px;
+  }
+
+  .texto__botones{
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+  }
+  .texto__titulo{
+    text-align: center;
+    width: 390px;
+    font-size: 4rem;
+  }
+
+  .texto__parrafo{
+    text-align: center;
+    position: absolute;
+    top: 550px;
+}
+
+footer > p {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+footer > span{
+  margin-left: 0px;
+  margin-bottom: 50px;
+}
+
 }

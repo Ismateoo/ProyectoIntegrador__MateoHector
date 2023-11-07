@@ -14,16 +14,17 @@
 </head>
 
 <body>
-  <div class="contenedor">
+  <div class="contenedor" id="contenedor">
     <nav>
       <div class="nav__logo">
         <img src="img/logo-verde.png" alt="logo-verde" class="logo__imagen" />
         <span class="logo__nombre">Flex</span>
       </div>
       <div class="nav__menu">
-        <span class="menu__Producto">Producto</span>
-        <span class="menu__Producto">Características</span>
-        <span class="menu__Producto">Precios</span>
+        <span id="abrirModal" class="menu__modalMenu"></span>
+        <a href="#precios" class="menu__Producto">Producto</a>
+        <a href="#caracteristicas" class="menu__Producto">Características</a>
+        <a href="#precios" class="menu__Producto">Precios</a>
       </div>
 
       <div class="nav__ingreso">
@@ -58,7 +59,7 @@
       </div>
     </header>
 
-    <section class="caracteristicas">
+    <section class="caracteristicas" id="caracteristicas">
       <div class="caracteristicas__tarjetas">
         <div class="icono">
           <img src="img/mail-icon.svg" alt="mail" class="caracteristicas__icono" />
@@ -90,7 +91,7 @@
       </div>
     </section>
 
-    <section class="precios">
+    <section class="precios" id="precios">
       <h2 class="h2_precios">Precios flexibles que escalan contigo</h2>
       <p class="p_precios">
         Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de
@@ -150,15 +151,28 @@
         </div>
       </div>
     </section>
-
-
     <footer>
       <img src="img/logo-verde.png" alt="" class="footer_logo">
       <p class="footer_p">Flex</p>
-      <span>Producto</span><span>Funcionalidades</span><span>Precios</span><span>Recursos</span><span>Carreras</span><span>Ayuda</span><span>Privacidad</span>
+      <a href="#precios"
+        class="cta">Producto</a><span>Funcionalidades</span><span>Precios</span><span>Recursos</span><span>Carreras</span><span>Ayuda</span><span>Privacidad</span>
       <p>&copy;2022 Flex. Un producto ficticio de Senpai.</p>
     </footer>
   </div>
+  <div id="miModal" class="modal">
+    <div class="modal__contenido">
+      <span id="cerrarModal" class="cerrar"></span>
+      <a href="#precios" class="">Producto</a>
+      <a href="#caracteristicas" class="" id="caracteristicas2" >Características</a>
+      <a href="#precios" class="">Precios</a>
+      <span class="ingreso__ingresar">Ingresar</span>
+        <button type="button" class="ingreso__btn boton__registrarse_verde verde_blanco">
+          Registrarse
+        </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

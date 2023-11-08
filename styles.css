@@ -3,12 +3,19 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --verde-primario:#2ad167;
+  --gris-oscuro: #2a3342;
+  --gris-claro: #93a1b6;
+  --blanco-principal: #f7f8f9;
+}
+
 body {
   margin: 0px;
 }
 .menu__Producto {
   text-decoration: none;
-  color: #2a3342;
+  color: var(--gris-oscuro);
 }
 
 .contenedor {

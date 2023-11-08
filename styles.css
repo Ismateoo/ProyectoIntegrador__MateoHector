@@ -31,7 +31,6 @@ nav {
 }
 
 .logo__imagen {
-  width: 30px;
   height: 30px;
 }
 
@@ -224,13 +223,26 @@ header {
   font-size: 1.3em;
 }
 
-.valor_card {
-  font-weight: bold;
-  font-size: 2.8em;
-  line-height: 2;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.valor_card1 {
+  position: absolute;
+  left: 105px;
+  top: 110px;
+  font-size: 1.7em;
 }
+
+.valor_card2 {
+  font-weight: 500;
+  font-size: 2.8em;
+}
+
+.valor_card3 {
+  font-size: 2em;
+}
+
+.valor_card4{
+  left: 90px;
+}
+
 
 .facturando_card {
   color: #93a1b6;
@@ -520,6 +532,7 @@ margin-top: -20px;
     background-size: contain;
     height: 50px;
     width: 50px;
+    margin-right: 10px;
   }
 
   .menu__Producto {
@@ -587,5 +600,13 @@ margin-top: -20px;
 
   .footer__navegacion > a {
     margin-left: 10px;
+  }
+
+  .formulario_modal{
+    width: 350px;
+  }
+
+  .olvideMiContra{
+    margin-left: 45px;
   }
 }

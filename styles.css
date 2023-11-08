@@ -3,6 +3,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  margin: 0px;
+}
 .menu__Producto {
   text-decoration: none;
   color: #2a3342;
@@ -17,6 +20,8 @@
   margin: auto;
   gap: 10%;
 }
+
+/* ------------------------------------------------------ */
 
 /* Contenedor nav */
 nav {
@@ -52,6 +57,8 @@ nav {
   align-items: center;
   gap: 20px;
 }
+
+/* ------------------------------------------------------ */
 
 /* Contenedor Header */
 header {
@@ -135,6 +142,9 @@ header {
   margin-bottom: 0px;
 }
 
+/* ------------------------------------------------------ */
+
+/* Caracteristicas */
 .caracteristicas {
   display: flex;
   justify-content: space-evenly;
@@ -307,7 +317,115 @@ footer > span {
   margin-bottom: 50px;
 }
 
+.footer__navegacion > a {
+  text-decoration: none;
+  color: #d3d3d3;
+  margin-left: 30px;
+}
+
 .modal {
+  display: none;
+}
+/* --------------------------------------------------- */
+.contenido_modal_registrarse {
+  background-color: #2a3342;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+label{
+  color: white;
+}
+
+.contenedor_logoBlanco {
+  background-color: #2ad167;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_registrarse_logo {
+  height: 45px;
+}
+
+.formulario_modal {
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+
+  
+  width: 500px;
+  text-align: start;
+}
+
+.p__modal__registrarse {
+  color: #f7f8f9;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.p2__modal__registrarse {
+  /* border: solid 1px red; */
+  color: #93a1b6;
+  font-weight: bold;
+/*   font-stretch: ultra-expanded;
+  word-spacing: 5px;
+  letter-spacing: 5px; */
+}
+
+.estilos_input {
+  border-radius: 10px;
+  height: 50px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.contenedor__checkbox {
+margin-top: -20px;
+
+}
+
+.olvideMiContra {
+  margin-left: 195px;
+  text-decoration: none;
+  color: #2ad167;
+}
+
+.botonModal {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+.registrarse {
+  text-decoration: none;
+  color: #2ad167;
+}
+
+.x__modal {
+  height: 50px;
+  width: 50px;
+  background-image: url(img/bx-x.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  filter: invert(100%);
+}
+
+.ocultar {
   display: none;
 }
 
@@ -340,6 +458,10 @@ footer > span {
 
   .caracteristicas {
     flex-direction: column;
+  }
+
+  .precios {
+    text-align: center;
   }
 
   footer {
@@ -401,14 +523,13 @@ footer > span {
 
   .menu__Producto {
     display: none;
-
   }
 
   .nav__ingreso {
     display: none;
   }
 
-  .modal__contenido{
+  .modal__contenido {
     background-color: #2a3342;
     height: 100vh;
     width: 100vw;
@@ -426,5 +547,44 @@ footer > span {
     background-repeat: no-repeat;
     background-size: contain;
     filter: invert(100%);
+  }
+
+  .contenido__cerrar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+
+  .modal_logo{
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    height: 30px;
+  }
+
+  .ingreso__ingresar{
+    color: #2a3342;
+    margin-right: 30px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .cerrar__salir{
+    width: 90px;
+    height: 90px;
+  }
+
+  .modal__contenido > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer__navegacion > a {
+    margin-left: 10px;
   }
 }

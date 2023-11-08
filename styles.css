@@ -363,20 +363,21 @@ label{
   flex-direction: column;
 
   
-  width: 500px;
+  width: 400px;
   text-align: start;
 }
 
 .p__modal__registrarse {
   color: #f7f8f9;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 20px;
 }
 
 .p2__modal__registrarse {
   /* border: solid 1px red; */
   color: #93a1b6;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 1.2rem;
 /*   font-stretch: ultra-expanded;
   word-spacing: 5px;
   letter-spacing: 5px; */
@@ -395,7 +396,7 @@ margin-top: -20px;
 }
 
 .olvideMiContra {
-  margin-left: 195px;
+  margin-left: 90px;
   text-decoration: none;
   color: #2ad167;
 }

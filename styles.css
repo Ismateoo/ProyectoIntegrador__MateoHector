@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 * {
   font-family: "Poppins", sans-serif;
+  color: var(--gris-oscuro);
 }
 
 
@@ -51,12 +52,6 @@ body {
   padding: 10px;
 }
 
-.boton__texto__nuevo {
-  padding: 7px;
-  border-radius: 30px;
-  margin-bottom: 0px;
-}
-
 .boton_precios {
   height: 50px;
   width: 85%;
@@ -83,6 +78,17 @@ body {
   border-radius: 5px;
 }
 
+.boton__registrarse{
+  font-size: 1rem;
+  width: 120px;
+}
+
+.boton__texto__nuevo {
+  padding: 7px;
+  border-radius: 30px;
+  margin-bottom: 0px;
+}
+
 /* ------------------------------------------------------ */
 
 /* Contenedor nav */
@@ -90,6 +96,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .logo__imagen {
@@ -114,13 +121,17 @@ nav {
 
 .menu__Navs {
   text-decoration: none;
-  color: var(--gris-oscuro);
+  color: var(--gris-claro);
 }
 
 .nav__ingreso {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.ingreso__spanIngresar {
+  color: var(--gris-claro);
 }
 
 /* ------------------------------------------------------ */
@@ -146,6 +157,7 @@ header {
 
 .texto__parrafo {
   font-size: 1.45rem;
+  color: var(--gris-claro);
 }
 
 .texto__botones {
@@ -210,6 +222,7 @@ header {
   font-size: 1rem;
   text-align: center;
   margin-top: 0px;
+  color: var(--gris-claro);
 }
 
 /* ------------------------------------------------------------ */
@@ -240,6 +253,7 @@ header {
 .precios__parrafo {
   font-size: 1.2em;
   margin-bottom: 90px;
+  color: var(--gris-claro);
 }
 
 .tarjeta__precio {
@@ -573,7 +587,7 @@ margin-top: -20px;
   }
 
   .ingreso__spanIngresar{
-    color: var(--gris-oscuro);
+    color: var(--gris-claro);
     margin-right: 30px;
     background-color: white;
     border: none;
@@ -593,10 +607,6 @@ margin-top: -20px;
     color: white;
   }
 
-  .boton__registrarse__mobile{
-    font-size: 1rem;
-    width: 120px;
-  }
 
   .footer__navegacion > a {
     margin-left: 10px;

@@ -1,5 +1,5 @@
 const contenedor = document.getElementById("contenedor")
-const modal = document.getElementById("miModal");
+const modal = document.getElementById("modal__mobile");
 const botonMostrar = document.getElementById("abrirModal");
 const botonCerrar = document.getElementById("cerrarModal");
 const caracteristicas = document.getElementById("modal__caracteristicas");

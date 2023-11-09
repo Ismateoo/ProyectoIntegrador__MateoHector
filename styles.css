@@ -20,10 +20,7 @@
 body {
   margin: 0px;
 }
-.menu__Producto {
-  text-decoration: none;
-  color: var(--gris-oscuro);
-}
+
 
 .contenedor {
   width: 100vw;
@@ -33,6 +30,57 @@ body {
   flex-direction: column;
   margin: auto;
   gap: 10%;
+}
+
+/* ------------------------------------------------------ */
+/* Botones */
+
+.boton__tamano {
+  width: 185px;
+  background-color: white;
+  border: solid #d3d3d3 0.12rem;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.boton__demo {
+  width: 220px;
+  height: 60px;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.boton__texto__nuevo {
+  padding: 7px;
+  border-radius: 30px;
+  margin-bottom: 0px;
+}
+
+.boton_precios {
+  height: 50px;
+  width: 85%;
+  position: absolute;
+  left: 38px;
+  top: 455px;
+  font-size: 1em;
+
+}
+
+.botonModal {
+  height: 50px;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+.boton--verde_blanco {
+  color: white;
+  background-color: var(--verde-primario);
+}
+
+.boton--borde{
+  border: none;
+  border-radius: 5px;
 }
 
 /* ------------------------------------------------------ */
@@ -62,6 +110,11 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 300px;
+}
+
+.menu__Navs {
+  text-decoration: none;
+  color: var(--gris-oscuro);
 }
 
 .nav__ingreso {
@@ -120,39 +173,6 @@ header {
   right: -30px;
 }
 
-.verde_blanco {
-  color: white;
-  background-color: var(--verde-primario);
-}
-
-.boton__registrarse {
-  width: 185px;
-  background-color: white;
-  border: solid #d3d3d3 0.12rem;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1.2rem;
-}
-.boton__registrarse_verde {
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-}
-.boton_demo {
-  width: 220px;
-  height: 60px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.boton__texto__nuevo {
-  padding: 7px;
-  border-radius: 30px;
-  margin-bottom: 0px;
-}
-
 /* ------------------------------------------------------ */
 
 /* Caracteristicas */
@@ -170,7 +190,7 @@ header {
   margin-top: 50px;
 }
 
-.icono {
+.tarjetas__icono {
   background-color: var(--verde-primario);
   width: 60px;
   height: 60px;
@@ -192,7 +212,10 @@ header {
   margin-top: 0px;
 }
 
-.gris {
+/* ------------------------------------------------------------ */
+
+/* Precios */
+.tabla__tarjeta {
   background-color: var(--blanco-principal);
   border-radius: 10px;
   height: 530px;
@@ -200,7 +223,7 @@ header {
   position: relative;
 }
 
-.tabla_precios {
+.precios__tabla {
   display: flex;
   flex-wrap: wrap;
   gap: 7.5em;
@@ -209,63 +232,51 @@ header {
   text-align: center;
 }
 
-.h2_precios {
+.precios__titulo {
   font-size: 3em;
   margin-bottom: 20px;
 }
 
-.p_precios {
+.precios__parrafo {
   font-size: 1.2em;
   margin-bottom: 90px;
 }
 
-.precio_card {
+.tarjeta__precio {
   color: var(--verde-primario);
   font-size: 1em;
 }
 
-.plan_card {
+.tarjeta__plan {
   color: var(--verde-primario);
   font-size: 1.3em;
 }
 
-.valor_card1 {
+.tarjeta__simbolo {
   position: absolute;
   left: 105px;
   top: 110px;
   font-size: 1.7em;
 }
 
-.valor_card2 {
+.tarjeta__valor {
   font-weight: 500;
   font-size: 2.8em;
 }
 
-.valor_card3 {
+.tarjeta__mes {
   font-size: 2em;
 }
 
-.valor_card4{
+.tarjeta__simbolo--izq{
   left: 90px;
 }
 
-
-.facturando_card {
+.tarjeta__facturando {
   color: var(--gris-claro);
   font-size: 1.2em;
   margin-top: 15px;
   margin-bottom: 10px;
-}
-
-.boton_precios {
-  border-radius: 5px;
-  height: 50px;
-  width: 85%;
-  position: absolute;
-  left: 38px;
-  top: 455px;
-  font-size: 1em;
-  border: none;
 }
 
 .img_check {
@@ -317,7 +328,7 @@ footer {
   height: 30px;
 }
 
-.footer_p {
+.footer__parrafo {
   font-size: 1.5em;
 }
 
@@ -337,11 +348,19 @@ footer > span {
   margin-left: 30px;
 }
 
-.modal {
+
+/* --------------------------------------------------- */
+
+/* Modal Registrarse */
+.ocultar {
   display: none;
 }
-/* --------------------------------------------------- */
-.contenido_modal_registrarse {
+
+label{
+  color: white;
+}
+
+.contenido__modal__registrarse {
   background-color: var(--gris-oscuro);
   height: 100vh;
   width: 100vw;
@@ -353,74 +372,7 @@ footer > span {
   text-align: center;
 }
 
-label{
-  color: white;
-}
-
-.contenedor_logoBlanco {
-  background-color: var(--verde-primario);
-  width: 90px;
-  height: 90px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal_registrarse_logo {
-  height: 45px;
-}
-
-.formulario_modal {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  text-align: start;
-}
-
-.p__modal__registrarse {
-  color: #f7f8f9;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.p2__modal__registrarse {
-  color: #93a1b6;
-  font-size: 1.2rem;
-}
-
-.estilos_input {
-  border-radius: 10px;
-  height: 50px;
-  margin-bottom: 30px;
-  border: none;
-}
-
-.contenedor__checkbox {
-margin-top: -20px;
-
-}
-
-.olvideMiContra {
-  margin-left: 90px;
-  text-decoration: none;
-  color: var(--verde-primario);
-}
-
-.botonModal {
-  height: 50px;
-  border-radius: 10px;
-  border: none;
-  margin-bottom: 25px;
-  font-size: 1.2rem;
-}
-
-.registrarse {
-  text-decoration: none;
-  color: var(--verde-primario);
-}
-
-.x__modal {
+.modal__cerar {
   height: 50px;
   width: 50px;
   background-image: url(img/bx-x.svg);
@@ -432,9 +384,61 @@ margin-top: -20px;
   filter: invert(100%);
 }
 
-.ocultar {
-  display: none;
+.contenedor__logoBlanco {
+  background-color: var(--verde-primario);
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+.logoBlanco__logo {
+  height: 45px;
+}
+
+.titulo__modal__registrarse {
+  color: #f7f8f9;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.parrafo__modal__registrarse {
+  color: #93a1b6;
+  font-size: 1.2rem;
+}
+
+.modal__formulario {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: start;
+}
+
+.formulario__input {
+  border-radius: 10px;
+  height: 50px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.formulario__checkbox {
+margin-top: -20px;
+}
+
+.olvideMiContra {
+  margin-left: 90px;
+  text-decoration: none;
+  color: var(--verde-primario);
+}
+
+.registrarse {
+  text-decoration: none;
+  color: var(--verde-primario);
+}
+
 
 /* ------------------------------------------------------ */
 
@@ -526,7 +530,7 @@ margin-top: -20px;
     margin-right: 10px;
   }
 
-  .menu__Producto {
+  .menu__Navs {
     display: none;
   }
 
@@ -534,7 +538,7 @@ margin-top: -20px;
     display: none;
   }
 
-  .modal__contenido {
+  .modal__mobile {
     background-color: var(--gris-oscuro);
     height: 100vh;
     width: 100vw;
@@ -544,7 +548,21 @@ margin-top: -20px;
     gap: 100px;
   }
 
-  .cerrar {
+  .mobile__logos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+
+  .logos__pulpo{
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    height: 30px;
+  }
+
+  .logos__cerrar {
     margin-top: 50px;
     background-image: url(img/bx-exit.svg);
     height: 40px;
@@ -554,28 +572,15 @@ margin-top: -20px;
     filter: invert(100%);
   }
 
-  .contenido__cerrar {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-  }
-
-  .modal_logo{
-    position: absolute;
-    top: 55px;
-    left: 50px;
-    height: 30px;
-  }
-
-  .ingreso__ingresar{
+  .ingreso__spanIngresar{
     color: var(--gris-oscuro);
     margin-right: 30px;
     background-color: white;
     border: none;
     border-radius: 5px;
     padding: 10px;
-    font-size: 0.85rem;
+    font-size: 1rem;
+    width: 200px;
   }
 
   .cerrar__salir{
@@ -583,16 +588,21 @@ margin-top: -20px;
     height: 90px;
   }
 
-  .modal__contenido > a {
+  .modal__mobile > a {
     text-decoration: none;
     color: white;
+  }
+
+  .boton__registrarse__mobile{
+    font-size: 1rem;
+    width: 120px;
   }
 
   .footer__navegacion > a {
     margin-left: 10px;
   }
 
-  .formulario_modal{
+  .modal__formulario{
     width: 350px;
   }
 
